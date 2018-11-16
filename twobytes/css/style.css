@@ -1,0 +1,275 @@
+@font-face {
+	font-family: GothamRoundedMedium;
+	src: url(../fonts/GothamRoundedMedium_21022.ttf);
+}
+
+@font-face {
+	font-family: GothamRounded-BookItalic;
+	src: url(../fonts/GothamRounded-BookItalic.otf);
+}
+
+@font-face {
+	font-family: GothamRoundedBook;
+	src: url('../fonts/GothamRoundedBook_21018.ttf');
+}
+body {
+	margin: 0 auto;
+}
+
+* {
+	box-sizing: inherit;
+	font-family: GothamRounded-BookItalic;
+}
+
+
+
+.wrapper {
+	margin: 0 auto;
+	width: 1260px;
+	
+}
+
+.main-header {
+	background-image: url(../img/header-bgc.png);
+	height: 850px;
+
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 77px;
+	margin: 0px 150px 0px 165px;
+}
+
+.nav ul li {
+	display: inline;
+	list-style-type: none;
+
+}
+
+.nav ul li a {
+	text-decoration: none;
+	font-family: GothamRoundedMedium;
+	font-size: 14px;
+	color: #fff;
+	margin-left: 24px;
+}
+
+.active {
+	border-top: 3px solid #5bbae8;
+	margin-left: 20px;
+}
+
+.a-link:hover {
+	background-color: pink;
+}
+
+.header-h1 {
+	margin-top: 228px;
+	margin-left: 153px;
+	font-size: 52px;
+	color: #ffffff;	
+	letter-spacing: -.01em;
+}
+
+.search-field {
+	margin-top: 7px;
+	margin-left: 152px;
+	width: 736px;
+	height: 55px;
+	font-size: 18px; 
+	color: #c7c7c7;
+	border: none;
+	-webkit-box-shadow: 0px 4px 3px 0px rgba(199,199,199,1);
+	-moz-box-shadow: 0px 4px 3px 0px rgba(199,199,199,1);
+	box-shadow: 0px 4px 3px 0px rgba(199,199,199,1);
+}
+
+.search-button {
+	width: 127px;
+	height: 50px;
+	margin-left: 78px;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: transparent;
+	background-color: #4acaff;
+	border: none;
+	-webkit-box-shadow: 0px 4px 3px 0px rgba(74,202,255,0.75);
+	-moz-box-shadow: 0px 4px 3px 0px rgba(74,202,255,0.75);
+	box-shadow: 0px 4px 3px 0px rgba(74,202,255,0.75);
+}
+
+.search-icon {
+	margin-right: 12px;
+}
+
+.checkbox-time {
+	margin-top: 20px;
+	margin-left: 152px;
+	font-size: 13px;
+	color: #ffffff;
+
+}
+
+.checkbox-field-one, .checkbox-field-two  {
+	display: none;
+}
+
+.checkbox-custom-one, .checkbox-custom-two {
+	position: relative;       
+	width: 15px;             
+	height: 15px;            
+	border: none;
+	border-radius: 2px;
+	background-color: #ffffff;
+	
+}
+
+.checkbox-custom-one, .checkbox-custom-two, .label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox-custom-two {
+	margin-left: 29px;
+}
+
+.label {
+margin-left: 11px;
+
+}
+.city-select {
+	width: 247px;
+	height: 37px;
+	font-size: 13px;
+	color: #c7c7c7;
+	margin-left: 140px;
+}
+.separator-one {
+	margin-top: 278px;
+}
+.main {
+	/*height: 586px;*/
+	margin-top: 110px;
+}
+
+.main-title, .main-title-text, .section-one-text  {
+	text-align: center;
+	color: #585858;
+}
+
+.main-title {
+	font-size: 30px;
+	color: #585858;
+}
+
+.main-title-text {
+	font-size: 45px;
+	font-family: GothamRoundedBook;
+	margin-top: 19px;
+}
+
+.colour-line {
+	display: block;
+	margin: 0 auto;
+	margin-top: 43px;
+}
+.section-one-text {
+	margin: 52px 278px 50px 240px;
+	padding-left: 32px;
+	font-size: 18px;
+}
+
+.find-more-about  {
+	text-decoration: none;
+	list-style-type: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-family: GothamRoundedMedium;
+	font-size: 15px;
+	color: #4acaff;
+	border: 3px solid #4acaff;
+	padding: 22px 30px 35px 30px;
+	border-radius: 10px;
+	width: 220px;	
+	height: 1px;
+	margin-top: 78px;
+}
+
+.separator-two {
+    margin-bottom: 0px;
+    margin-top: 100px;
+
+}
+
+.section-two {
+	background-image: url(../img/section-two-bg.png);
+	height: 440px;
+}
+
+.section-two-title {
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 154px;
+    margin-top: 0px;
+
+}
+.mail-subscribe {
+	background-color: transparent;
+    border: none;
+	padding-top: 19px;
+	padding-left: 19px;
+	width: 300px;
+	font-size: 14px;
+	color: #ffffff;
+
+
+}
+
+.mail-subscribe-form {
+	border: 2px solid #4acaff;
+	display: block;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 361px;
+	height: 50px;
+	margin-top: 35px;
+}
+
+.mail-subscribe-button {
+	background-color: transparent;
+	border: none;
+
+}
+
+.mail-link  {
+	text-decoration: none;
+	list-style-type: none;
+	font-family: GothamRoundedMedium;
+	font-size: 14px;
+	color: #7a7a7a;
+	margin-left: 4px;
+
+}
+
+.copyright {
+	font-size: 14px;
+	color: #c4c1c1;
+	font-family: GothamRoundedMedium;
+}
+
+.term-policices {
+	text-decoration: none;
+	list-style-type: none;
+	font-family: GothamRoundedMedium;
+	font-size: 14px;
+	color: #7a7a7a;
+}
+/*
+.logo-img {
+	width: 134px;
+}*/
