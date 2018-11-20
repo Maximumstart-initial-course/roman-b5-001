@@ -20,21 +20,14 @@ body {
 	box-sizing: inherit;
 	font-family: GothamRounded-BookItalic;
 }
-
-
-
 .wrapper {
 	margin: 0 auto;
 	width: 1260px;
-	
 }
-
 .main-header {
 	background-image: url(../img/header-bgc.png);
 	height: 850px;
-
 }
-
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -42,13 +35,10 @@ body {
 	padding-top: 77px;
 	margin: 0px 150px 0px 165px;
 }
-
 .nav ul li {
 	display: inline;
 	list-style-type: none;
-
 }
-
 .nav ul li a {
 	text-decoration: none;
 	font-family: GothamRoundedMedium;
@@ -56,16 +46,9 @@ body {
 	color: #fff;
 	margin-left: 24px;
 }
-
-.active {
+.nav ul li a:hover {
 	border-top: 3px solid #5bbae8;
-	margin-left: 20px;
 }
-
-.a-link:hover {
-	background-color: pink;
-}
-
 .header-h1 {
 	margin-top: 228px;
 	margin-left: 153px;
@@ -73,11 +56,11 @@ body {
 	color: #ffffff;	
 	letter-spacing: -.01em;
 }
-
 .search-field {
 	margin-top: 7px;
 	margin-left: 152px;
-	width: 736px;
+	padding-left: 19px;
+	width: 717px;
 	height: 55px;
 	font-size: 18px; 
 	color: #c7c7c7;
@@ -86,7 +69,6 @@ body {
 	-moz-box-shadow: 0px 4px 3px 0px rgba(199,199,199,1);
 	box-shadow: 0px 4px 3px 0px rgba(199,199,199,1);
 }
-
 .search-button {
 	width: 127px;
 	height: 50px;
@@ -100,58 +82,70 @@ body {
 	-moz-box-shadow: 0px 4px 3px 0px rgba(74,202,255,0.75);
 	box-shadow: 0px 4px 3px 0px rgba(74,202,255,0.75);
 }
-
+.search-button:hover {
+	background-color: #3e4654;
+}
 .search-icon {
 	margin-right: 12px;
 }
-
 .checkbox-time {
-	margin-top: 20px;
-	margin-left: 152px;
+	position: relative;
+	right: 20px;
 	font-size: 13px;
 	color: #ffffff;
-
 }
-
-.checkbox-field-one, .checkbox-field-two  {
+.check-box-one {
+	margin-left: 120px;
+}
+.checkbox-field-one {
 	display: none;
 }
-
 .checkbox-custom-one, .checkbox-custom-two {
-	position: relative;       
+	position: absolute;      
 	width: 15px;             
 	height: 15px;            
 	border: none;
 	border-radius: 2px;
 	background-color: #ffffff;
-	
 }
-
-.checkbox-custom-one, .checkbox-custom-two, .label {
-	display: inline-block;
-	vertical-align: middle;
+.checkbox-custom-one {
+	top: 30px;
+    left: 170px;
 }
-
 .checkbox-custom-two {
-	margin-left: 29px;
+	top: 30px;
+    left: 290px;
 }
-
+.checked-full-time {
+    left: 203px;
+    top: 35px;
+    position: absolute;
+}
+.checked-part-time {
+	left: 320px;
+    top: 35px;
+    position: absolute;
+}
+.checkbox-field-one:checked ~ .checkbox-custom-one,
+.checkbox-field-one:checked ~ .checkbox-custom-two  {
+	display: block;
+	background-color: #131c25;
+}
 .label {
-margin-left: 11px;
-
+	margin-left: 11px;
 }
 .city-select {
 	width: 247px;
 	height: 37px;
 	font-size: 13px;
 	color: #c7c7c7;
-	margin-left: 140px;
+	margin-left: 662px;
+    margin-top: 22px;
 }
 .separator-one {
-	margin-top: 278px;
+	margin-top: 276px;
 }
 .main {
-	/*height: 586px;*/
 	margin-top: 110px;
 }
 
@@ -159,18 +153,15 @@ margin-left: 11px;
 	text-align: center;
 	color: #585858;
 }
-
 .main-title {
 	font-size: 30px;
 	color: #585858;
 }
-
 .main-title-text {
 	font-size: 45px;
 	font-family: GothamRoundedBook;
 	margin-top: 19px;
 }
-
 .colour-line {
 	display: block;
 	margin: 0 auto;
@@ -181,7 +172,6 @@ margin-left: 11px;
 	padding-left: 32px;
 	font-size: 18px;
 }
-
 .find-more-about  {
 	text-decoration: none;
 	list-style-type: none;
@@ -198,38 +188,32 @@ margin-left: 11px;
 	height: 1px;
 	margin-top: 78px;
 }
-
 .separator-two {
-    margin-bottom: 0px;
+    position: absolute;
     margin-top: 100px;
-
 }
-
 .section-two {
 	background-image: url(../img/section-two-bg.png);
 	height: 440px;
+	margin-top: 107px;
 }
-
 .section-two-title {
 	font-size: 18px;
 	color: #ffffff;
 	text-align: center;
-	padding-top: 154px;
+	padding-top: 157px;
     margin-top: 0px;
-
+    font-family: GothamRoundedBook;
 }
 .mail-subscribe {
 	background-color: transparent;
     border: none;
-	padding-top: 19px;
+	margin-top: 17px;
 	padding-left: 19px;
 	width: 300px;
 	font-size: 14px;
 	color: #ffffff;
-
-
 }
-
 .mail-subscribe-form {
 	border: 2px solid #4acaff;
 	display: block;
@@ -239,13 +223,10 @@ margin-left: 11px;
 	height: 50px;
 	margin-top: 35px;
 }
-
 .mail-subscribe-button {
 	background-color: transparent;
 	border: none;
-
 }
-
 .mail-link  {
 	text-decoration: none;
 	list-style-type: none;
@@ -253,15 +234,18 @@ margin-left: 11px;
 	font-size: 14px;
 	color: #7a7a7a;
 	margin-left: 4px;
-
 }
-
+.mail-adress {
+	margin-left: 155px;
+    margin-top: 72px;
+}
 .copyright {
 	font-size: 14px;
 	color: #c4c1c1;
 	font-family: GothamRoundedMedium;
+	margin-left: 151px;
+    margin-top: 24px;
 }
-
 .term-policices {
 	text-decoration: none;
 	list-style-type: none;
@@ -269,7 +253,6 @@ margin-left: 11px;
 	font-size: 14px;
 	color: #7a7a7a;
 }
-/*
-.logo-img {
-	width: 134px;
-}*/
+.separator-three {
+	position: absolute;
+}
