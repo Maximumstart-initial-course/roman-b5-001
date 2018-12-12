@@ -10,7 +10,7 @@
 	<div class="wrapper">
 	<header class="main-header">
 				<navigation class="nav">
-					<img src="img/main-logo.png" alt="logo" class="logo-img">
+					<a href="#"><img src="img/main-logo.png" alt="logo" class="logo-img"></a>
 						<ul>
 							<li><a href="#" class="main-menu-nav active">HOME</a></li>
 							<li><a href="#" class="main-menu-nav">ABOUT US</a></li>
@@ -21,9 +21,10 @@
 						</ul>
 				</navigation>
 			<h1 class="header-h1">I’m looking for..</h1>
-			<form action="http://maximumstart-echo.herokuapp.com/" method="post" enctype="multipart/form-data">
-				<input type="search" class="search-field" name="search-form" id="search-form" placeholder="Enter a Job Description" required>
-				<button class="search-button a-link" type="submit" name="search-form"><img class="search-icon" alt="search-icon" src="img/icon-search.png">Search</button>
+			<div class="data-field"> 
+			<form action="http://maximumstart-echo.herokuapp.com/" method="post">
+				<input type="text" class="search-field" name="search-form" id="search-form" placeholder="Enter a Job Description" required>
+				<button class="search-button a-link" type="submit"><img class="search-icon" alt="search-icon" src="img/icon-search.png">Search</button>
 					<div class="checkbox-time">
 						<div class="check-box-one">
 							<label class="check-box-all">
@@ -40,42 +41,39 @@
 						</label>
 					</div>
 						<lable for="city-dropdown"></lable>
-							<select class="city-select" id="city-dropdown">
+							<select class="city-select" id="city-dropdown" name="your-city">
 								<option value="1" selected disabled>Select your Location</option>
-								<option value="Ukraine">Ukraine</option>
-								<option value="USA">USA</option>
-								<option value="Russia">Russia</option>
-								<option value="Polska">Polska</option>
+								<option>Ukraine</option>
+								<option>USA</option>
+								<option>Russia</option>
+								<option>Polska</option>
 							</select>
 					</div>
 			</form>
-			<img src="img/separator-one.png" alt="separator" class="separator-one">
+			</div>
 	</header>
-	
 	<main class="main">
 		<section class="section-one">
 				<h1 class="main-title">We’re leaders in</h1>
 					<h2 class="main-title-text">Creative Digital Recruitment</h2>
-						<img src="img/colour-line.png" alt="line" class="colour-line">
+					<div class="color-line"></div>
 							<p class="section-one-text">Based in Surry Hills, the creative hub of Sydney we are surrounded by creativity and that reflects on the type of jobs we recruit for.</p>
 				<a href="#" class="find-more-about a-link">FIND OUT MORE ABOUT US!</a>
 		</section>
-			<img src="img/separator-two.png" alt="separator" class="separator-two">
 		<section class="section-two">
 				<h1 class="section-two-title">Subscribe to our Job Seeker Mailing List</h1>
 					<form class="mail-subscribe-form" action="http://maximumstart-echo.herokuapp.com/" method="post">
-						<input class="mail-subscribe" type="email" placeholder="Enter Your Email Address"><button class="mail-subscribe-button" type="submit"> <img src="img/mail-icon.png" alt="mail-search-icon"></button>
+						<input class="mail-subscribe" type="email" placeholder="Enter Your Email Address" name="mail-subscribe-form"><button class="mail-subscribe-button" type="submit"> <img src="img/mail-icon.png" alt="mail-search-icon"></button>
 					</form>
 		</section>
-			<img src="img/separator-three.png" alt="separator" class="separator-three">
 	</main>
-	<foter class="main-footer">
+	<footer class="main-footer">
 		<div class="mail-adress">
 			<img src="img/mail-icon.png" alt="mail-icon" class="mail-to">
 			<a class="mail-link" href="mailto:hello@twobytes.com.au">hello@twobytes.com.au</a>
 		</div>
 		<p class="copyright">Copyright &copy; 2014 Two Bytes Consulting. <a class="term-policices" href="#">Terms & Policies.</a></p>
-	</foter>
+	</footer>
 	</div>
 	</body>
 </html>
