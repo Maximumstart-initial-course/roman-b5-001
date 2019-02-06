@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Twobytes</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+	<header class="main-header">
+				<nav class="navigation">
+					<a href="#"><img src="img/main-logo.png" alt="logo" class="logo-img"></a>
+						<ul>
+							<li><a href="#" class="main-menu-nav active">HOME</a></li>
+							<li><a href="#" class="main-menu-nav">ABOUT US</a></li>
+							<li><a href="#" class="main-menu-nav">JOBS</a></li>
+							<li><a href="#" class="main-menu-nav">CLIENTS</a></li>
+							<li><a href="#" class="main-menu-nav">EMPLOYERS</a></li>
+							<li><a href="#" class="main-menu-nav">CONTACT US</a></li>
+						</ul>
+				</nav>
+			<h1 class="header-h1">I’m looking for..</h1>
+			<div class="data-field"> 
+			<form action="http://maximumstart-echo.herokuapp.com/" method="post">
+				<input type="text" class="search-field" name="search-form" id="search-form" placeholder="Enter a Job Description" required>
+				<button class="search-button a-link" type="submit"><img class="search-icon" alt="search-icon" src="img/icon-search.png">Search</button>
+					<div class="checkbox-time">
+						<div class="check-box-one">
+							<label class="check-box-all">
+								<label for="full-time-field" class="checked-full-time">Full time</label>
+ 								<input type="checkbox" name="time-full-work" value="full-time" id="full-time-field" class="checkbox-field-one">
+								<div class="checkbox-custom-one"></div>
+							</label>
+						</div>
+					<div class="check-box-two">
+						<label class="check-box-all">
+	                    	<label for="part-time-field" class="checked-part-time">Part Time / Casual / Freelance</label>
+							<input type="checkbox" name="time-part-work" value="part time-casual-freelance" id="part-time-field" class="checkbox-field-one">
+							<div class="checkbox-custom-two"></div>
+						</label>
+					</div>
+						<lable for="city-dropdown"></lable>
+							<select class="city-select" id="city-dropdown" name="your-city">
+								<option value="1" selected disabled>Select your Location</option>
+								<option>Ukraine</option>
+								<option>USA</option>
+								<option>Russia</option>
+								<option>Polska</option>
+							</select>
+					</div>
+			</form>
+			</div>
+	</header>
+	<main class="main">
+		<section class="section-one">
+				<h1 class="main-title">We’re leaders in</h1>
+					<h2 class="main-title-text">Creative Digital Recruitment</h2>
+					<div class="color-line"></div>
+							<p class="section-one-text">Based in Surry Hills, the creative hub of Sydney we are surrounded by creativity and that reflects on the type of jobs we recruit for.</p>
+				<a href="#" class="find-more-about a-link">FIND OUT MORE ABOUT US!</a>
+		</section>
+		<section class="section-two">
+				<h1 class="section-two-title">Subscribe to our Job Seeker Mailing List</h1>
+					<form class="mail-subscribe-form" action="http://maximumstart-echo.herokuapp.com/" method="post">
+						<input class="mail-subscribe" type="email" placeholder="Enter Your Email Address" name="mail-subscribe-form"><button class="mail-subscribe-button" type="submit"> <img src="img/mail-icon.png" alt="mail-search-icon"></button>
+					</form>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="mail-adress">
+			<img src="img/mail-icon.png" alt="mail-icon" class="mail-to">
+			<a class="mail-link" href="mailto:hello@twobytes.com.au">hello@twobytes.com.au</a>
+		</div>
+		<p class="copyright">Copyright &copy; 2014 Two Bytes Consulting. <a class="term-policices" href="#">Terms & Policies.</a></p>
+	</footer>
+	</div>
+	</body>
+</html>
