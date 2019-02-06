@@ -41,23 +41,15 @@ body {
 .main-pictures-list {
 padding-left: 15px;
 }
+
 .main-pictures-list-box img {
 	width: 351px;
 	height: 250px;
-	border: 1px solid black; 
+	border: 1px solid black;
+	object-fit: cover; 
 } 
 
 .main-pictures-list-box:nth-child(4) img,
 .main-pictures-list-box:nth-child(8) img  {
 	width: 1065px;
-}
-
-
-
-	
-	
-
-
-	
-
 }

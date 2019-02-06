@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+* {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.main-container {
+	display: grid;
+    height: 345px;
+    width: 1065px;
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: repeat(5, 20%);
+	object-fit: cover;
+}
+
+.grid-element {
+	padding: 3px;
+    width: 100%;
+	height: 100%;
+}
+
+.main-link:nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.main-link:nth-child(6) {
+	grid-area: 1 / 3 / 4 / 3;
+}
